@@ -1,0 +1,294 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+header .main-logo {
+  width: 6rem;
+  cursor: pointer;
+}
+
+main p {
+  padding-left: 1rem;
+  font-weight: 400;
+  color: hsl(201deg, 11%, 66%);
+}
+main h3 {
+  font-size: 1.2rem;
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 600;
+}
+main .fourth-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .fourth-sect .pngs {
+  width: 6rem;
+  margin-bottom: 3rem;
+}
+main .sect {
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+}
+main .sect .full-width {
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+main .sect h2 {
+  font-size: 1.5rem;
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 600;
+}
+main .sect p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main .sect .ios-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  background-color: hsl(171deg, 66%, 44%);
+}
+main .sect .mac-btn {
+  background-color: hsl(233deg, 100%, 69%);
+}
+main .sect .btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+main .sect .btn {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 2rem;
+}
+main .first-sect {
+  padding-top: 0;
+}
+main .first-sect h1 {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: hsl(210deg, 10%, 33%);
+}
+main .third-sect .tablet {
+  margin-bottom: 6rem;
+}
+main .pc-info {
+  margin-top: 1rem;
+}
+main .pc-info div {
+  margin-bottom: 4rem;
+}
+main .tab-flex {
+  margin-top: 5rem;
+}
+main .tab-flex div {
+  margin-top: 4rem;
+}
+main .tab-flex div img {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: rgba(234, 230, 230, 0.35);
+  margin-top: 8rem;
+  text-align: center;
+}
+footer .logo {
+  cursor: pointer;
+}
+footer .logo-holder {
+  padding: 3rem;
+}
+footer .logo-holder .full-width {
+  width: 3rem;
+}
+footer .about-us {
+  margin-bottom: 3rem;
+}
+footer .about-us ul li {
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+footer .about-us ul li:hover {
+  color: hsl(171deg, 66%, 44%);
+  cursor: pointer;
+}
+footer .social-icons {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+footer .social-icons svg:hover {
+  color: hsl(171deg, 66%, 44%);
+  cursor: pointer;
+}
+
+.fixed-width {
+  width: 4rem;
+}
+
+@media screen and (min-width: 40em) {
+  main .sect .btn {
+    width: 70%;
+  }
+  main .fourth-sect .pngs {
+    width: 8rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  main .pc-info div {
+    margin-bottom: 1rem;
+  }
+  main .sect {
+    margin-bottom: 0;
+  }
+  main .sect .btn {
+    width: 15rem;
+  }
+  main .sect .mac-btn {
+    margin-left: 1rem;
+  }
+  main .sect .points h3 {
+    text-align: left;
+  }
+  main .sect .points p {
+    padding-left: 0;
+    text-align: left;
+  }
+  main .first-sect p {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  main .second-sect p {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  main .pc {
+    display: flex;
+    margin-top: 2rem;
+  }
+  main .pc .pc-info {
+    margin-top: 4rem;
+  }
+  main .pc .full-width {
+    position: relative;
+    left: -5%;
+    width: 50%;
+    height: 20rem;
+  }
+  main .third-sect .tab-flex {
+    margin-top: 0;
+    display: flex;
+  }
+  main .third-sect .tab-flex div {
+    padding-right: 2rem;
+  }
+  main .third-sect .tablet {
+    width: 40rem;
+  }
+  main .fourth-sect {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .fourth-sect .pngs {
+    width: 6rem;
+  }
+  main .sixth-sect p {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  footer {
+    padding: 2rem;
+    display: flex;
+    margin-top: 3rem;
+    padding-bottom: 0;
+  }
+  footer .logo-holder {
+    width: 20%;
+    padding: 0;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul div {
+    margin-right: 2rem;
+  }
+  footer ul:last-child {
+    margin-right: 15rem;
+  }
+  footer .social-icons {
+    align-items: center;
+    width: 15%;
+    margin: 0;
+    padding-top: 0;
+    margin-top: -5%;
+  }
+  footer .about-us {
+    width: 65%;
+  }
+}/*# sourceMappingURL=input.css.map */

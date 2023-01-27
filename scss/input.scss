@@ -1,0 +1,293 @@
+@forward 'global';
+@use "util" as u;
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: u.$font;
+}
+header{
+    .main-logo{
+        width: 6rem;
+        cursor: pointer;
+    }
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+main{
+    
+    p{
+        padding-left: 1rem;
+        font-weight: 400;
+        color: u.$gray-blue;
+    }
+    h3{
+        font-size: 1.2rem;
+        color: u.$dark-gray-blue;
+        font-weight: 600;
+    }
+    .fourth-sect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .pngs {
+            width: 6rem;
+                margin-bottom: 3rem;
+            }
+    }
+    
+    .sect{
+        text-align: center;
+        .full-width{
+            width: 100%;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+        }
+        padding: 1.5rem;
+        h2{
+            font-size: 1.5rem; 
+            color: u.$dark-gray-blue;
+            font-weight: 600;
+        }
+        p{
+            line-height: 1.5rem;
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .ios-btn{
+            margin-top: 1.5rem;
+            margin-bottom: 1.2rem;
+            background-color: u.$cyan;
+        }
+        .mac-btn{
+            background-color: u.$light-blue;
+        }
+        .btn:hover{
+            opacity: 0.70;
+            cursor: pointer;
+        }
+        .btn{
+            color: white;
+            font-size: 1rem;
+            font-weight: 400;
+            width: 100%;
+            height: 3rem;
+            border: none;
+            border-radius: 2rem;
+        }
+        margin-bottom: 5rem;
+    }
+    .first-sect{
+        padding-top: 0;
+        h1{
+            margin-top: 0;
+            padding-top: 0;
+            line-height: 2.5rem;
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: u.$dark-gray-blue;
+        }
+    }
+    .third-sect{
+        .tablet{
+            margin-bottom: 6rem;
+        }
+    }
+    .pc-info{
+        margin-top: 1rem;
+        div{
+            margin-bottom: 4rem;
+        }
+    }
+    .tab-flex{
+        margin-top: 5rem;
+        div{
+            margin-top: 4rem;
+            img{
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+footer{
+    .logo{
+        cursor: pointer;
+    }
+    padding: 1rem;
+    .logo-holder{
+        .full-width{
+            width: 3rem;
+        }
+        padding: 3rem;
+    }
+    background-color: u.$light-gray;
+    margin-top: 8rem;
+    text-align: center;
+    .about-us{
+        margin-bottom: 3rem;
+        ul{
+            li{
+                color: u.$dark-gray-blue;
+                font-weight: 600;
+                margin-bottom: 1.5rem;
+            }
+            li:hover{
+                color: u.$cyan;
+                cursor: pointer;
+            }
+        }
+    }
+    .social-icons{
+        width: 60%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        svg:hover{
+            color: u.$cyan;
+            cursor: pointer;
+        }
+    }
+}
+.fixed-width{
+    width: 4rem;
+}
+
+@media screen and(min-width: 40em) {
+    main{
+        .sect{
+            .btn {
+                    width: 70%;
+                }
+        }
+        .fourth-sect{
+            .pngs{
+                width: 8rem;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 50em) {
+    main {
+        .pc-info{
+            div{
+                margin-bottom: 1rem;
+            }
+            
+        }
+        .sect {
+            margin-bottom: 0;
+            .btn {
+                width: 15rem;
+            }
+            .mac-btn {
+                margin-left: 1rem;
+            }
+            .points{
+                h3{
+                    text-align: left;
+                }
+                p{
+                    padding-left: 0;
+                    text-align: left;
+                }
+            }
+            }
+        .first-sect{
+            p{
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+        }
+        .second-sect {
+            p {
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+            
+}
+.pc {
+    display: flex;
+
+    .pc-info {
+        margin-top: 4rem;
+    }
+
+    margin-top: 2rem;
+
+    .full-width {
+        position: relative;
+        left: -5%;
+        width: 50%;
+        height: 20rem;
+    }
+}
+
+    .third-sect{
+        .tab-flex{
+            margin-top: 0;
+            display: flex;
+            div{
+                padding-right: 2rem;
+            }
+        }
+        .tablet{
+            width: 40rem;
+        }
+    }
+        .fourth-sect {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            flex-direction: row;
+            justify-content: space-around;
+            .pngs {
+                width: 6rem;
+            }
+            
+        }
+        .sixth-sect{
+            p{
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+        }
+    }
+    footer{
+        .logo-holder{
+            width: 20%;
+            padding: 0;
+        }
+        padding: 2rem;
+        display: flex;
+        ul{
+            display: flex;
+            justify-content: center;
+            div{
+                margin-right: 2rem;
+            }
+        }
+        ul:last-child{
+            margin-right: 15rem;
+        }
+        .social-icons{
+            align-items: center;
+            width: 15%;
+            margin: 0;
+            padding-top: 0;
+            margin-top: -5%;
+        }
+        .about-us{
+            width: 65%;
+        }
+        margin-top: 3rem;
+        padding-bottom: 0;
+    }
+}
