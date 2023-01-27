@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site URL]()
+- Live Site URL: [Live site URL](https://hassanakhtar8.github.io/clipboard-landing-page-master/)
 
 ### Built with
 
